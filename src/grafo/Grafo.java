@@ -44,7 +44,7 @@ public class Grafo {
 			for (int i = 0; i < this.cantidadDeNodos; i++) {
 				for (int j = 0; j < this.cantidadDeNodos; j++) {
 					if (i != k && j != k && i != j && matrizCostoTotal[i][k] != Grafo.INFINITO &&
-							matrizCostoTotal[k][i] != Grafo.INFINITO) {
+							matrizCostoTotal[k][j] != Grafo.INFINITO) {
 						// calculos
 						costoDeIaJ = matrizCostoTotal[i][j];
 						costoDeIaK = matrizCostoTotal[i][k];
